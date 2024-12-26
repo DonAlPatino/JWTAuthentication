@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: JWTAuthentication
+  #settings of postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rent_db
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true

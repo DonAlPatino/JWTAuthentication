@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  pg_db:
+    image: postgres:14.5
+    restart: always
+    container_name: postgres_jwt_spring
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=rent_db
+    volumes:
+      - "c:/pg_data:/var/lib/postgresql/data"
